@@ -49,3 +49,4 @@ const girar = () => {
 }
 
 document.getElementById("tirar").addEventListener("click", girar);
+
