@@ -30,11 +30,11 @@ const girar = () => {
         dineroDisponible--;
         document.getElementById("dinero").innerText = dineroDisponible;
         cargarImagenesAleatorias();
-        const slot1ImgSrc = document.getElementById("slot1").querySelector('.imagen').querySelector('img').src;
-        const slot2ImgSrc = document.getElementById("slot2").querySelector('.imagen').querySelector('img').src;
-        const slot3ImgSrc = document.getElementById("slot3").querySelector('.imagen').querySelector('img').src;
+        const imagenEnSlotUno = document.getElementById("slot1").querySelector('.imagen').querySelector('img').src;
+        const imagenEnSlotDos = document.getElementById("slot2").querySelector('.imagen').querySelector('img').src;
+        const imagenEnSlotTres = document.getElementById("slot3").querySelector('.imagen').querySelector('img').src;
 
-        if (slot1ImgSrc === slot2ImgSrc && slot1ImgSrc === slot3ImgSrc) {
+        if (imagenEnSlotUno === imagenEnSlotDos && imagenEnSlotUno === imagenEnSlotTres) {
             alert("¡Has ganado 20 créditos! Lucky u!!");
             dineroDisponible += 20; 
             document.getElementById("dinero").innerText = dineroDisponible;
